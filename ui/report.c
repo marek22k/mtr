@@ -409,6 +409,8 @@ void xml_close(
     char buf[128];
 
     printf("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n");
+    printf("<!-- test 1: ä, ü, ö 😀 ❤️ 🐧 你好，世界 -->\n");
+    printf("<!-- test 2: \xC3\xA4 \xE2\x9D\xA4\xEF\xB8\x8F \xC3\xA4\xC3\xBC\xC3\xB6 \xE7\x88\xB1 \xE5\xA5\xBD\n -->\n");
     printf("<MTR SRC=\"%s\" DST=\"%s\"", ctl->LocalHostname,
            ctl->Hostname);
     printf(" TOS=\"0x%X\"", ctl->tos);
